@@ -338,3 +338,51 @@ header nav a {
   text-align: center;
   width: 80%;
 }
+.form h2 {
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+.form form {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form form input {
+  box-sizing: border-box;
+  width: 50%;
+  height: 3.5rem;
+}
+.form form label {
+  padding-bottom: 1rem;
+}
+.select-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.select-menu p {
+  font-size: 1.8rem;
+  padding-top: 2rem;
+}
+.select-menu select {
+  width: 50%;
+  margin-bottom: 2rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
+  background: none;
+}
+.sub {
+  background: #17a2b8;
+  font-size: 1.9rem;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  color: #ffffff;
+  text-align: center;
+  width: 50%;
+  margin-bottom: 3rem;
+}
+.sub:hover {
+  background: #63d9ec;
+}
