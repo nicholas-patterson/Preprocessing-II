@@ -3,12 +3,12 @@
   border-top: 2px dashed silver;
 }
 
-.buttons() {
+.buttons(@rem, @center) {
   background: @eastern-blue;
-  font-size: 1.5rem;
-  padding: 1.2rem;
+  font-size: @rem * 1.5;
+  padding: @rem * 1.2;
   border-radius: 1rem;
   color: @white;
-  text-align: center;
+  text-align: @center;
   width: 80%;
 }
