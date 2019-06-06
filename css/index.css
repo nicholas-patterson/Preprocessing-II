@@ -207,6 +207,23 @@ header nav a {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home .main-header img {
+  margin-top: 2rem;
+  border-top: 2px dashed silver;
+}
+.home .main-header h2 {
+  padding-top: 2rem;
+}
+.home .main-header p {
+  border-bottom: 2px dashed silver;
+  padding-bottom: 3rem;
+}
+@media (max-width: 500px) {
+  .home .main-header {
+    box-sizing: border-box;
+    margin: 0rem 1.5rem 0rem 1.5rem;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
@@ -252,4 +269,13 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .destination .btn {
+  background: #17a2b8;
+  font-size: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  color: #ffffff;
+  text-align: center;
+  width: 80%;
 }
