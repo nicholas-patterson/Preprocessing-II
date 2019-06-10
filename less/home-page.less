@@ -1,21 +1,52 @@
 .home {
+  .main-header {
+    img {
+      margin-top: 2rem;
+      .border();
+    }
+    h2 {
+      padding-top: 2rem;
+    }
+    p {
+      border-bottom: 2px dashed silver;
+      padding-bottom: 3rem;
+    }
+    @media @mobile {
+      box-sizing: border-box;
+      margin: 0rem 1.5rem 0rem 1.5rem;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      // margin: 0rem 1.5rem 0rem 1.5rem;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      box-sizing: border-box;
+      width: 100%;
+    }
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        margin: 0rem 1.5rem 0rem 1.5rem;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        margin: 0rem 1.5rem 0rem 1.5rem;
+        padding-left: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -26,6 +57,12 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      align-content: center;
+      box-sizing: border-box;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -41,9 +78,18 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 98%;
+      margin: 0rem 1.5rem 0rem 1.5rem;
+      box-sizing: border-box;
+    }
 
     img {
       border-radius: 10px;
+      @media @mobile {
+        width: 95%;
+        padding-bottom: 2rem;
+      }
     }
   }
 
@@ -52,10 +98,24 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      margin: 0rem 1.8rem 0rem 1.8rem;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 90%;
+      }
+      .btn {
+        .buttons(1rem, center);
+      }
     }
   }
-}// home
+  box-sizing: border-box;
+} // home

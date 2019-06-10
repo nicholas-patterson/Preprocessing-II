@@ -1,1 +1,27 @@
 // Navigation Styles here
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  @media @mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    @media @mobile {
+      justify-content: space-around;
+      width: 100%;
+      padding-top: 2rem;
+    }
+
+    a {
+      margin-right: 3rem;
+      text-decoration: none;
+      color: @shark;
+      font-size: 1.4rem;
+    }
+  }
+}

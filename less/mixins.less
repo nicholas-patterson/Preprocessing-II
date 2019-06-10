@@ -1,1 +1,14 @@
 // Mixins in here
+.border() {
+  border-top: 2px dashed silver;
+}
+
+.buttons(@rem, @center) {
+  background: @eastern-blue;
+  font-size: @rem * 1.5;
+  padding: @rem * 1.2;
+  border-radius: 1rem;
+  color: @white;
+  text-align: @center;
+  width: 80%;
+}
